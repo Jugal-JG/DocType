@@ -1,18 +1,27 @@
 # DocType submission
 
-- Source, dependency lockfile, and Supabase setup SQL
-- [Local setup and reviewer walkthrough](README.md)
-- [Architecture note](ARCHITECTURE.md)
-- [AI workflow note](AI_WORKFLOW.md)
-- Automated import and browser tests
-- [Walkthrough video status](WALKTHROUGH_URL.txt)
+**Live product** · [doc-type-lime.vercel.app](https://doc-type-lime.vercel.app)
 
 ## Reviewer access
 
-Live URL and demo credentials are pending Supabase and Vercel setup. The walkthrough video and Google Drive folder are also pending.
+Use these simulated accounts with the email and password form.
 
-## Verification
+| Account | Email | Password |
+| --- | --- | --- |
+| Person 1 | `john@gmail.com` | `johndoe` |
+| Person 2 | `doe@gmail.com` | `johndoe` |
 
-The automated merge test covers simultaneous edits and reloading a formatted document from its saved state. The browser suite covers live collaboration, typing indicators, and imports when the Supabase migration and demo account credentials are configured.
+To test sharing, sign in to both accounts in separate browser profiles. Create a document as Person 1 and share it with Person 2. In the second profile, open it under **Shared with me**. Reviewers can also choose **Continue with Google**.
 
-With another two to four hours, finish hosted verification and submission, then add offline draft recovery.
+## Included
+
+- Application source, dependency lockfile, and Supabase SQL migrations
+- [README.md](README.md) with local setup, a review walkthrough, and test commands
+- [ARCHITECTURE.md](ARCHITECTURE.md) with system design, scope decisions, and limitations
+- [AI_WORKFLOW.md](AI_WORKFLOW.md) with AI usage, implementation decisions, and verification
+- Automated tests for collaboration, imports, Word and PDF pagination, and responsive editor behavior
+- [WALKTHROUGH_URL.txt](WALKTHROUGH_URL.txt) for the required 3–5 minute walkthrough
+
+## Before submitting
+
+Add the recorded video URL to `WALKTHROUGH_URL.txt`, then place the source and submission files in one Google Drive folder. Confirm the reviewer can open the folder and video links. Submit the Drive folder link and the live product link together.
